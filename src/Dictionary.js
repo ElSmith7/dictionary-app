@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Dictionary.css";
+import axios from "axios";
 
 export default function Dictionary() {
   const [word, setWord] = useState(null);
@@ -14,7 +15,7 @@ export default function Dictionary() {
   }
 
   return (
-    <div className="Dictionary">
+    <div className="dictionary">
       <form onSubmit={handleSubmit}>
         <input type="text" autoComplete="off" onChange={wordSearched} />
         <input type="submit" />

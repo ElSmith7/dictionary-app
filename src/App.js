@@ -8,7 +8,15 @@ function App() {
         <header></header>
         <Dictionary />
       </div>
-      <footer></footer>
+      <footer className="text-center">
+        <a
+          target="_blank"
+          href="https://github.com/ElSmith7/react-dictionary-app"
+        >
+          Open source code
+        </a>{" "}
+        by Eleanor Smith
+      </footer>
     </div>
   );
 }
