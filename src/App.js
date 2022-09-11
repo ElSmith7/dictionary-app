@@ -11,6 +11,7 @@ function App() {
       <footer className="text-center">
         <a
           target="_blank"
+          rel="noreferrer"
           href="https://github.com/ElSmith7/react-dictionary-app"
         >
           Open source code
