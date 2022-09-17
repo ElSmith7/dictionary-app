@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <div className="container">
         <header></header>
-        <Dictionary />
+        <Dictionary suggestedSearch="leaf" />
       </div>
       <footer className="text-center">
         <a
