@@ -32,15 +32,19 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="dictionary">
-        <form onSubmit={handleSubmit}>
-          <input
-            type="text"
-            autoComplete="off"
-            placeHolder={props.suggestedSearch}
-            onChange={wordSearched}
-          />
-          <input type="submit" />
-        </form>
+        <section>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="text"
+              autoComplete="off"
+              placeHolder={props.suggestedSearch}
+              onChange={wordSearched}
+            />
+          </form>
+          <div className="suggested-search">
+            suggested searches: forest, embroidery, stein, fascinator...
+          </div>
+        </section>
         <Result result={result} />
       </div>
     );

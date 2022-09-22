@@ -3,7 +3,7 @@ import Synonyms from "./Synonyms";
 
 export default function Meaning(props) {
   return (
-    <div className="meaning">
+    <section className="meaning">
       <h4>{props.meaning.partOfSpeech}</h4>
       {props.meaning.definitions.map((definition, index) => {
         if (index < 1) {
@@ -19,6 +19,6 @@ export default function Meaning(props) {
         }
       })}
       <Synonyms synonyms={props.meaning.synonyms} />
-    </div>
+    </section>
   );
 }

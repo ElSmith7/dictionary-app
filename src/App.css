@@ -1,1 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+:root {
+  --main-bg: rgb(252, 251, 248);
+  --primary-font: #2d3636;
+  --accent-color: rgb(255, 161, 21);
+}
+header {
+  text-align: center;
+  padding-top: 30px;
+}
 
+header h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+header i {
+  font-size: 38px;
+  color: var(--accent-color);
+}
+footer {
+  text-align: center;
+  font-size: 14px;
+  padding-bottom: 20px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #4844d7;
+}
+
+.App {
+  font-family: "Lato", sans-serif;
+  width: 100%;
+  background: var(--main-bg);
+  color: var(--primary-font);
+}

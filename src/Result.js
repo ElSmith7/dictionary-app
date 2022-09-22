@@ -7,14 +7,16 @@ export default function Result(props) {
   if (props.result) {
     return (
       <div className="result">
-        <h2>{props.result.word}</h2>
-        {props.result.phonetics.map((phonetics, index) => {
-          return (
-            <div key={index}>
-              <Phonetics phonetics={phonetics} />
-            </div>
-          );
-        })}
+        <section>
+          <h2>{props.result.word}</h2>
+          {props.result.phonetics.map((phonetics, index) => {
+            return (
+              <div key={index}>
+                <Phonetics phonetics={phonetics} />
+              </div>
+            );
+          })}
+        </section>
         {props.result.meanings.map((meaning, index) => {
           return (
             <div key={index}>

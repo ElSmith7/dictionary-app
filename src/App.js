@@ -4,17 +4,21 @@ import Dictionary from "./Dictionary";
 function App() {
   return (
     <div className="App">
+      <header>
+        <h1>
+          <i class="fa-solid fa-book-open" /> Dictionary
+        </h1>
+      </header>
       <div className="container">
-        <header></header>
         <Dictionary suggestedSearch="leaf" />
       </div>
-      <footer className="text-center">
+      <footer>
         <a
           target="_blank"
           rel="noreferrer"
           href="https://github.com/ElSmith7/react-dictionary-app"
         >
-          Open source code
+          <i class="fa-brands fa-github"></i> Open source code
         </a>{" "}
         by Eleanor Smith
       </footer>
