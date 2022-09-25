@@ -11,8 +11,7 @@
   border-radius: 3px;
   border: 1px solid #ddd;
 }
-.dictionary h4,
-h2 {
+.dictionary h2 {
   color: var(--accent-color);
 }
 .dictionary h2 {
@@ -23,4 +22,5 @@ h2 {
   font-size: 12px;
   opacity: 0.7;
   margin-top: 5px;
+  margin-left: 2px;
 }

@@ -3,12 +3,11 @@ import Meaning from "./Meaning";
 import Phonetics from "./Phonetics";
 
 export default function Result(props) {
-  console.log(props.result);
   if (props.result) {
     return (
       <div className="result">
         <section>
-          <h2>{props.result.word}</h2>
+          <h2 className="mb-1">{props.result.word}</h2>
           {props.result.phonetics.map((phonetics, index) => {
             return (
               <div key={index}>

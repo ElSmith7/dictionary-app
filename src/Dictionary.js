@@ -37,7 +37,7 @@ export default function Dictionary(props) {
             <input
               type="text"
               autoComplete="off"
-              placeHolder={props.suggestedSearch}
+              placeholder={props.suggestedSearch}
               onChange={wordSearched}
             />
           </form>

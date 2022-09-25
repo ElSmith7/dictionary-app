@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header>
         <h1>
-          <i class="fa-solid fa-book-open" /> Dictionary
+          <i className="fa-solid fa-book-open" /> Dictionary
         </h1>
       </header>
       <div className="container">
@@ -18,7 +18,7 @@ function App() {
           rel="noreferrer"
           href="https://github.com/ElSmith7/react-dictionary-app"
         >
-          <i class="fa-brands fa-github"></i> Open source code
+          <i className="fa-brands fa-github"></i> Open source code
         </a>{" "}
         by Eleanor Smith
       </footer>
