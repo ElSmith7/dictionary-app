@@ -1,10 +1,6 @@
 import React from "react";
 import "./Synonyms.css";
 
-export default function Synonyms(props) {
-  function handleClick(event) {
-    console.log(event.currentTarget.id);
-  }
 
   if (props.synonyms) {
     return (
@@ -12,7 +8,7 @@ export default function Synonyms(props) {
         <ul>
           {props.synonyms.map((synonym, index) => {
             return (
-              <li key={index} id={synonym} onClick={handleClick}>
+              <li key={index} id={synonym}>
                 {synonym}
               </li>
             );
