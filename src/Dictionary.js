@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useSelector } from "react-redux";
 import "./Dictionary.css";
 import Result from "./Result";
 import Photos from "./Photos";
 import axios from "axios";
 
 export default function Dictionary(props) {
+  const hello = useSelector((state) => state.hello);
   const [word, setWord] = useState("leaf");
   const [result, setResult] = useState(null);
   const [loaded, setLoaded] = useState(false);
@@ -43,6 +45,14 @@ export default function Dictionary(props) {
   if (loaded) {
     return (
       <div className="dictionary">
+        <ul>
+          {hello.map((test) => (
+            <li key={test.greeting}>
+              <h3>{test.greeting}</h3>
+              <div>Views: {test.gesture}</div>
+            </li>
+          ))}
+        </ul>
         <section>
           <form onSubmit={handleSubmit}>
             <input
