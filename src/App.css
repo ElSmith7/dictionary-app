@@ -39,3 +39,9 @@ footer a:hover {
   background: var(--main-bg);
   color: var(--primary-font);
 }
+
+@media (max-width: 900px) {
+  header {
+    padding-top: 40px;
+  }
+}

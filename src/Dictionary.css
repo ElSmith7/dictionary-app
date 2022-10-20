@@ -24,3 +24,14 @@
   margin-top: 5px;
   margin-left: 2px;
 }
+
+@media (max-width: 900px) {
+  .dictionary input {
+    padding: 8px 10px;
+    font-size: 20px;
+  }
+
+  .dictionary .suggested-search {
+    font-size: 10px;
+  }
+}
