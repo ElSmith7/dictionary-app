@@ -8,3 +8,9 @@
   margin-top: 0px;
   margin-left: -6px;
 }
+
+@media (max-width: 900px) {
+  audio {
+    width: 285px;
+  }
+}

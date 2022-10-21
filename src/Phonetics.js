@@ -9,7 +9,7 @@ export default function Phonetics(props) {
         <div className="phonetic-text">{props.phonetics.text}</div>
 
         <ReactAudioPlayer
-          className="phonetic-audio"
+          className="phonetic-audio d-none d-md-block"
           src={props.phonetics.audio}
           controls
         />
