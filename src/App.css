@@ -39,7 +39,6 @@ footer a:hover {
   padding: 0;
 }
 .App {
-  padding: 0 auto;
   background: var(--main-bg);
   font-family: "Lato", sans-serif;
   color: var(--primary-font);
