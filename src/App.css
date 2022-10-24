@@ -33,10 +33,15 @@ footer a:hover {
   transition: all 0.2s ease-in-out;
 }
 
-.App {
-  font-family: "Lato", sans-serif;
+.container {
   width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+.App {
+  padding: 0 auto;
   background: var(--main-bg);
+  font-family: "Lato", sans-serif;
   color: var(--primary-font);
 }
 
@@ -46,5 +51,9 @@ footer a:hover {
   }
   footer {
     font-size: 12px;
+  }
+  .App {
+    padding: 0 auto;
+    margin: 0;
   }
 }

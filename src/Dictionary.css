@@ -1,9 +1,10 @@
 .dictionary section {
   background: white;
   padding: 30px;
-  margin: 30px auto;
+  max-width: 80%;
+  margin: 35px auto;
   border-radius: 6px;
-  box-shadow: 0px 6px 12px 1px rgba(131, 131, 131, 0.2);
+  box-shadow: 0px 4px 10px 1px rgba(131, 131, 131, 0.1);
 }
 .dictionary input {
   width: 100%;
@@ -26,6 +27,7 @@
 @media (max-width: 900px) {
   .dictionary section {
     margin: 30px auto;
+    max-width: 90%;
     padding: 18px 15px;
   }
   .dictionary input {
