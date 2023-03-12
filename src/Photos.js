@@ -20,6 +20,15 @@ export default function Photos(props) {
             );
           })}
         </div>
+        <div>
+          <a
+            rel="noreferrer"
+            href="https://www.pexels.com/"
+            className="text-center font-size-1"
+          >
+            Photos from Pexels
+          </a>
+        </div>
       </section>
     );
   } else {

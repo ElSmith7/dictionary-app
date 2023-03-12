@@ -26,10 +26,17 @@ export default function Dictionary(props) {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrl).then(handleResponse);
 
-    const pexelsApiKey = `563492ad6f91700001000001f8c251ed6a594872bacfe286e28414e4`;
+    const pexelsApiKey =
+      "563492ad6f91700001000001f8c251ed6a594872bacfe286e28414e4";
     let pexelsUrl = `https://api.pexels.com/v1/search/?page=1&per_page=6&query=${word}`;
     let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-    axios.get(pexelsUrl, { headers: headers }).then(handlePexelsResponse);
+
+    axios
+      .get(pexelsUrl, { headers: headers })
+      .then(handlePexelsResponse)
+      .catch((error) => {
+        console.log(error);
+      });
   }
 
   function handleSubmit(event) {
