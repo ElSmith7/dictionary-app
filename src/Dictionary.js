@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-
 import "./Dictionary.css";
 import Result from "./Result";
 import Photos from "./Photos";
@@ -25,23 +24,22 @@ export default function Dictionary(props) {
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrl).then(handleResponse);
+  }
 
-    // const pexelsApiKey =
-    //   "563492ad6f91700001000001f8c251ed6a594872bacfe286e28414e4";
-    // let pexelsUrl = `https://api.pexels.com/v1/search/?page=1&per_page=6&query=${word}`;
-    // let headers = { Authorization: `Bearer ${pexelsApiKey}` };
-
-    // axios
-    //   .get(pexelsUrl, { headers: headers })
-    //   .then(handlePexelsResponse)
-    //   .catch((error) => {
-    //     console.log(error);
-    //   });
+  async function searchPictures() {
+    const response = await axios.get("https:api.unsplash.com/search/photos", {
+      headers: {
+        Authorization: "Client-ID sUSnATSWfN1FiDEZ7JGUsqYyB_9LftXvZ_DfHXb4duE",
+      },
+      params: { query: `${word}` },
+    });
+    console.log(response.data.results);
   }
 
   function handleSubmit(event) {
     event.preventDefault();
     search();
+    searchPictures();
   }
 
   function wordSearched(event) {
