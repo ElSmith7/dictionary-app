@@ -5,7 +5,7 @@ export default function Photos(props) {
   if (props.photos) {
     return (
       <section className="photos">
-        <div className="row">
+        <div className="row text-center">
           {props.photos.map((photo) => {
             return (
               <div className="col-4" key={photo.id}>
@@ -15,7 +15,7 @@ export default function Photos(props) {
                   href={photo.urls.regular}
                 >
                   <img
-                    src={photo.urls.small}
+                    src={photo.urls.thumb}
                     alt={photo.alt_description}
                     className="img-fluid"
                   />

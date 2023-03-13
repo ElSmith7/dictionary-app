@@ -16,6 +16,7 @@ export default function Dictionary(props) {
   function load() {
     setLoaded(true);
     search();
+    searchPictures();
   }
 
   function handleUnsplashResponse(response) {
@@ -27,12 +28,16 @@ export default function Dictionary(props) {
   }
 
   async function searchPictures() {
-    const response = await axios.get("https:api.unsplash.com/search/photos", {
-      headers: {
-        Authorization: "Client-ID sUSnATSWfN1FiDEZ7JGUsqYyB_9LftXvZ_DfHXb4duE",
-      },
-      params: { query: `${word}` },
-    });
+    const response = await axios.get(
+      "https:api.unsplash.com/search/photos?per_page=6?",
+      {
+        headers: {
+          Authorization:
+            "Client-ID sUSnATSWfN1FiDEZ7JGUsqYyB_9LftXvZ_DfHXb4duE",
+        },
+        params: { query: `${word}` },
+      }
+    );
     handleUnsplashResponse(response);
   }
 
