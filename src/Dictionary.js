@@ -29,7 +29,8 @@ export default function Dictionary(props) {
 
   async function searchPictures() {
     const response = await axios.get(
-      "https:api.unsplash.com/search/photos?per_page=6&orientation=landscape",
+      "https://api.unsplash.com/search/photos?per_page=6&orientation=landscape",
+
       {
         headers: {
           Authorization:
