@@ -6,28 +6,23 @@ export default function Photos(props) {
     return (
       <section className="photos">
         <div className="row">
-          {props.photos.map((photo, index) => {
+          {props.photos.map((photo) => {
             return (
-              <div className="col-4" key={index}>
+              <div className="col-4" key={photo.id}>
                 <a
                   target="_blank"
                   rel="noopener noreferrer"
-                  href={photo.src.original}
+                  href={photo.urls.regular}
                 >
                   <img
-                    src={photo.src.landscape}
-                    alt={photo.alt}
+                    src={photo.urls.small}
+                    alt={photo.alt_description}
                     className="img-fluid"
                   />
                 </a>
               </div>
             );
           })}
-        </div>
-        <div>
-          <a href="https://www.pexels.com/" className="text-center font-size-1">
-            Photos from Pexels
-          </a>
         </div>
       </section>
     );

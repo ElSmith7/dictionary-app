@@ -18,9 +18,9 @@ export default function Dictionary(props) {
     search();
   }
 
-  // function handlePexelsResponse(response) {
-  //   setPhotos(response.data.photos);
-  // }
+  function handleUnsplashResponse(response) {
+    setPhotos(response.data.results);
+  }
   function search() {
     let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`;
     axios.get(apiUrl).then(handleResponse);
@@ -33,7 +33,7 @@ export default function Dictionary(props) {
       },
       params: { query: `${word}` },
     });
-    console.log(response.data.results);
+    handleUnsplashResponse(response);
   }
 
   function handleSubmit(event) {
