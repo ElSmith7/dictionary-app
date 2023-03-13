@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import Dictionary from "./Dictionary";
 
@@ -17,7 +18,7 @@ function App() {
         <footer>
           <a
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
             href="https://github.com/ElSmith7/react-dictionary-app"
           >
             <i className="fa-brands fa-github"></i> Open source code

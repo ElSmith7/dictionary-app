@@ -9,7 +9,11 @@ export default function Photos(props) {
           {props.photos.map((photo, index) => {
             return (
               <div className="col-4" key={index}>
-                <a target="_blank" rel="noreferrer" href={photo.src.original}>
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={photo.src.original}
+                >
                   <img
                     src={photo.src.landscape}
                     alt={photo.alt}
@@ -21,11 +25,7 @@ export default function Photos(props) {
           })}
         </div>
         <div>
-          <a
-            rel="noreferrer"
-            href="https://www.pexels.com/"
-            className="text-center font-size-1"
-          >
+          <a href="https://www.pexels.com/" className="text-center font-size-1">
             Photos from Pexels
           </a>
         </div>
