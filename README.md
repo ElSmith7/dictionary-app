@@ -1,16 +1,19 @@
 # Dictionary App
 
-A dictionary app built to experiment with the props system.
+A dictionary app which displays phonetics, definitions, synonyms and pictures.
 
 ## About the project
 
-Exploring how the props method of data passing becomes increasingly inefficient as components get more and more nested - requiring prop drilling.
+I made this dictionary app to explore different APIs and use the data received from them to experiment with React's props system.
 
 ## Built with
 
-- !\[image\](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-- <img src="{https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white}" />
-- <img src="{https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white}" />
-- <img src="{https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white}" />
-- <img src="{https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E}"/>
-- <img src="{https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white}"/>
+- React
+- NPM
+- Bootstrap
+- Javascript
+- css3
+
+## Findings
+
+As I was building the application I noticed how the props method of data passing became increasingly inefficient as components got more and more nested - requiring prop drilling. This would therefore lead to an increase in complexity in much larger projects; where context or Redux would likely be used in combination with props.
