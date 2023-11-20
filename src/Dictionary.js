@@ -33,8 +33,7 @@ export default function Dictionary(props) {
 
       {
         headers: {
-          Authorization:
-            "Client-ID sUSnATSWfN1FiDEZ7JGUsqYyB_9LftXvZ_DfHXb4duE",
+          Authorization: `Client-ID ${process.env.REACT_APP_UNSPLASH_API_KEY}`,
         },
         params: { query: `${word}` },
       }
